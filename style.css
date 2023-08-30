@@ -528,6 +528,7 @@ textarea:focus {
 }
 
 /*MEDIA QUERIES*/
+/*WIDTH 1280px*/
 
 @media all and (max-width: 1280px) {
   /*Header*/
@@ -541,8 +542,16 @@ textarea:focus {
     width: 90vw;
   }
 
+  .presentation-container {
+    box-shadow: -30px -30px rgba(209, 165, 244, 0.25);
+  }
+
+  .description-title {
+    font-size: 45px;
+  }
+
   .description-text {
-    margin: 0px 30px 0px 80px;
+    margin: 0px 10px 0px 30px;
   }
 
   /*Contact div*/
@@ -556,6 +565,8 @@ textarea:focus {
     padding: 30px;
   }
 }
+
+/*WIDTH 1100px*/
 
 @media all and (max-width: 1100px) {
   /*Header*/
@@ -572,7 +583,70 @@ textarea:focus {
   .main-text {
     top: -45px;
   }
+
+  /*Section*/
+
+  .section-title {
+    font-size: 45px;
+  }
+
+  .card-container {
+    width: 95vw;
+  }
+
+  .card {
+    min-width: 275px;
+    min-height: 350px;
+  }
+
+  .card-icon {
+    font-size: 80px;
+  }
+
+  .card-title {
+    font-size: 30px;
+    top: -40px;
+  }
+
+  .card-text {
+    font-size: 16px;
+    line-height: 35px;
+  }
+
+  /*Who are we div*/
+
+  .who-are-we-container {
+    width: 95vw;
+    padding: 20px;
+  }
+
+  .presentation-container {
+    min-width: 450px;
+    min-height: 450px;
+    box-shadow: -20px -20px rgba(209, 165, 244, 0.25);
+  }
+
+  .who-are-we-image {
+    transform: translateX(-70px) translateY(-20px);
+  }
+
+  .description-title {
+    font-size: 40px;
+    margin-left: 10px;
+  }
+
+  .description-text {
+    font-size: 16px;
+    line-height: 40px;
+    margin: 0px 0px 0px 30px;
+  }
+
+  .contact-button.description {
+    margin-top: 10px;
+  }
 }
+
+/*WIDTH 900px*/
 
 @media all and (max-width: 900px) {
   /*Header*/
@@ -625,7 +699,92 @@ textarea:focus {
     width: 45.7vw;
     min-width: 400px;
   }
+
+  /*Section*/
+
+  .section-title {
+    top: 16%;
+    font-size: 40px;
+  }
+
+  .card-container {
+    width: 100vw;
+  }
+
+  .card {
+    min-width: 200px;
+    min-height: 325px;
+    padding: 10px;
+  }
+
+  .card-icon {
+    font-size: 70px;
+    top: -50px;
+  }
+
+  .card-title {
+    font-size: 25px;
+    top: -40px;
+  }
+
+  .card-text {
+    position: relative;
+    top: -20px;
+    max-height: 150px;
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  /*Who are we div*/
+
+  .who-are-we-div {
+    height: 120vh;
+    min-height: 850px;
+  }
+
+  .who-are-we-container {
+    min-height: 700px;
+    flex-direction: column;
+    top: 60%;
+    transform: translate(-50%, -55%);
+  }
+
+  .presentation-container {
+    min-width: 400px;
+    min-height: 400px;
+    max-width: 500px;
+    max-height: 500px;
+  }
+
+  .who-are-we-image {
+    transform: translateX(-60px) translateY(-20px);
+  }
+
+  .names-container {
+    bottom: 3%;
+  }
+
+  .description-title {
+    position: absolute;
+    top: -90px;
+    font-size: 40px;
+    margin-left: 0px;
+  }
+
+  .description-text {
+    font-size: 16px;
+    line-height: 40px;
+    margin: 0px 0px 0px 0px;
+    max-width: 600px;
+    text-align: center;
+  }
+
+  .contact-button.description {
+    margin-top: 10px;
+  }
 }
+
+/*WIDTH 700px*/
 
 @media all and (max-width: 700px) {
   /*Header*/
@@ -675,4 +834,81 @@ textarea:focus {
   .main-image-container {
     display: none;
   }
+
+  /*Section*/
+
+  .section-container {
+    height: 120vh;
+    min-height: 900px;
+  }
+
+  .section-separation {
+    display: none;
+  }
+
+  .section-title {
+    top: 5%;
+    font-size: 35px;
+  }
+
+  .card-container {
+    width: 100vw;
+    min-height: 650px;
+    top: 60%;
+    flex-direction: column;
+  }
+
+  .card {
+    min-width: 200px;
+    min-height: 140px;
+    height: 200px;
+    padding: 20px;
+  }
+
+  .card-icon {
+    font-size: 30px;
+    top: -10px;
+  }
+
+  .card-title {
+    font-size: 20px;
+    top: -10px;
+  }
+
+  .card-text {
+    top: 0px;
+    max-height: 80px;
+    height: 80px;
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  /*Who are we div*/
+
+  .presentation-container {
+    min-width: 340px;
+    min-height: 340px;
+    max-width: 500px;
+    max-height: 500px;
+    box-shadow: none;
+    border-radius: 5px;
+  }
+
+  .who-are-we-image {
+    transform: translateX(-120px) translateY(-10px);
+    scale: 1.1;
+  }
+
+  .names {
+    width: 160px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .description-text {
+    font-size: 16px;
+    line-height: 35px;
+    margin: 0px 0px 0px 0px;
+  }
+  
 }
